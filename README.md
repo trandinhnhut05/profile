@@ -1,16 +1,52 @@
-# React + Vite
+# Personal Portfolio Website - Trần Đình Nhứt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A stunning, modern, and fully responsive personal portfolio website built with **React** and **Vite** using pure CSS for high-quality aesthetics (glassmorphism cards, light/dark themes, and interactive animations). 
 
-Currently, two official plugins are available:
+Automated CI/CD is configured to build and deploy to **Cloudflare Pages** on every push.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- **Responsive Design:** Optimized for all screen sizes (mobile, tablet, desktop).
+- **Glassmorphism Theme:** Elegant semi-transparent glass cards with backdrop filters.
+- **Theme Toggle:** Interactive light and dark theme mode toggle with localStorage state persistence.
+- **Visuals:** High-quality developer avatar asset.
+- **Automation:** GitHub Actions workflow configures automatic builds and pushes deployments directly to Cloudflare Pages.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React, Vite
+- **Styling:** CSS3 (Variables, Gradients, Keyframe animations)
+- **Deployment:** Cloudflare Pages
+- **CI/CD:** GitHub Actions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💻 Local Development
+
+To run the project locally, install dependencies and start the development server:
+
+```bash
+# Install packages
+npm install
+
+# Start Vite dev server
+npm run dev
+```
+
+The app will be running locally at `http://localhost:5173`.
+
+## 📦 Deployment and CI/CD
+
+### Manual Upload
+The production bundle is created in the `dist` directory:
+
+```bash
+npm run build
+```
+
+You can zip the `dist` folder and drag-and-drop it into the Cloudflare Pages dashboard.
+
+### GitHub Actions (Automation)
+The repository is configured with a GitHub Action workflow located in `.github/workflows/deploy.yml`. 
+
+It deploys automatically to Cloudflare Pages on every push to `main` using the following repository secrets:
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_API_TOKEN`
