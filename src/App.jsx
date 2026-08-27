@@ -116,7 +116,7 @@ function App() {
       {/* Navbar */}
       <header className="navbar">
         <div className="container">
-          <a href="#home" className="logo">Duy Tran</a>
+          <a href="#home" className="logo">Trần Đình Nhứt</a>
           <nav>
             <ul className="nav-links">
               <li><a href="#home" className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
@@ -144,7 +144,7 @@ function App() {
           <div className="hero-content">
             <span className="badge">Welcome to my space</span>
             <h1 className="hero-title">
-              Hi, I'm <span>Duy Tran</span>
+              Hi, I'm <span>Trần Đình Nhứt</span>
             </h1>
             <p className="hero-bio">
               A passionate Fullstack Developer specialized in building highly performant, responsive, and beautiful web applications. Experienced in modern frontend frameworks, cloud edge runtimes (Cloudflare Workers/Pages), and databases.
@@ -158,7 +158,7 @@ function App() {
             <div className="avatar-wrapper">
               <img
                 src={avatarImg}
-                alt="Duy Tran Avatar"
+                alt="Trần Đình Nhứt Avatar"
                 className="avatar-img"
               />
             </div>
@@ -328,7 +328,7 @@ function App() {
                 </div>
                 <div className="contact-text-box">
                   <h4>Email</h4>
-                  <a href="mailto:duytran.dev@example.com">duytran.dev@example.com</a>
+                  <a href="mailto:nhut64463@gmail.com">nhut64463@gmail.com</a>
                 </div>
               </div>
 
@@ -403,7 +403,7 @@ function App() {
 
       {/* Footer */}
       <footer className="footer container">
-        <p>© {new Date().getFullYear()} Duy Tran. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Trần Đình Nhứt. All rights reserved.</p>
         <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', opacity: 0.7 }}>
           Built with React & Vite. Hosted on Cloudflare Pages.
         </p>
