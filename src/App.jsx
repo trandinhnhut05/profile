@@ -119,10 +119,10 @@ function App() {
           <a href="#home" className="logo">Trần Đình Nhứt</a>
           <nav>
             <ul className="nav-links">
-              <li><a href="#home" className={activeSection === 'home' ? 'active' : ''}>Home</a></li>
-              <li><a href="#skills" className={activeSection === 'skills' ? 'active' : ''}>Skills</a></li>
-              <li><a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Projects</a></li>
-              <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a></li>
+              <li><a href="#home" className={activeSection === 'home' ? 'active' : ''}>Trang chủ</a></li>
+              <li><a href="#skills" className={activeSection === 'skills' ? 'active' : ''}>Kỹ năng</a></li>
+              <li><a href="#projects" className={activeSection === 'projects' ? 'active' : ''}>Dự án</a></li>
+              <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Liên hệ</a></li>
             </ul>
           </nav>
           <div className="controls">
@@ -142,16 +142,16 @@ function App() {
       <section id="home" className="hero-section container">
         <div className="hero-grid">
           <div className="hero-content">
-            <span className="badge">Welcome to my space</span>
+            <span className="badge">Chào mừng đến với góc nhỏ của tôi</span>
             <h1 className="hero-title">
-              Hi, I'm <span>Trần Đình Nhứt</span>
+              Xin chào, tôi là <br /><span>Trần Đình Nhứt</span>
             </h1>
             <p className="hero-bio">
-              A passionate Fullstack Developer specialized in building highly performant, responsive, and beautiful web applications. Experienced in modern frontend frameworks, cloud edge runtimes (Cloudflare Workers/Pages), and databases.
+              Một Lập trình viên Fullstack đam mê xây dựng các ứng dụng web hiệu năng cao, phản hồi nhanh và đẹp mắt. Tôi có kinh nghiệm làm việc với các thư viện frontend hiện đại, cloud edge runtimes (Cloudflare Workers/Pages) và các hệ cơ sở dữ liệu.
             </p>
             <div className="hero-cta">
-              <a href="#contact" className="btn btn-primary">Contact Me</a>
-              <a href="#projects" className="btn btn-secondary">View Work</a>
+              <a href="#contact" className="btn btn-primary">Liên hệ tôi</a>
+              <a href="#projects" className="btn btn-secondary">Xem dự án</a>
             </div>
           </div>
           <div className="hero-visual">
@@ -170,14 +170,14 @@ function App() {
       <section id="skills" className="section container">
         <div className="glass-card">
           <div className="section-header">
-            <span className="section-subtitle">Capabilities</span>
-            <h2 className="section-title">My Technical Stack</h2>
+            <span className="section-subtitle">Năng lực chuyên môn</span>
+            <h2 className="section-title">Công nghệ sử dụng</h2>
           </div>
 
           <div className="skills-grid">
             {/* Frontend */}
             <div className="skills-category">
-              <h3>Frontend Development</h3>
+              <h3>Phát triển Frontend</h3>
               <div className="skill-list">
                 {[
                   { name: 'React / Next.js', val: '90%' },
@@ -233,8 +233,8 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="section container">
         <div className="section-header">
-          <span className="section-subtitle">Portfolio</span>
-          <h2 className="section-title">Featured Projects</h2>
+          <span className="section-subtitle">Sản phẩm cá nhân</span>
+          <h2 className="section-title">Dự án tiêu biểu</h2>
         </div>
 
         <div className="projects-grid">
@@ -244,9 +244,9 @@ function App() {
               <span className="project-icon">🛒</span>
             </div>
             <div className="project-content">
-              <h3 className="project-title">E-Commerce Platform</h3>
+              <h3 className="project-title">Nền tảng Thương mại Điện tử</h3>
               <p className="project-desc">
-                A modern e-commerce storefront with high performance image optimization, secure Stripe checkouts, and clean dashboard stats.
+                Trang web bán hàng hiện đại với tối ưu hóa hình ảnh hiệu năng cao, thanh toán Stripe an toàn và bảng điều khiển quản trị trực quan.
               </p>
               <div className="project-tags">
                 <span className="project-tag">React</span>
@@ -255,7 +255,7 @@ function App() {
               </div>
               <div className="project-links">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <GithubIcon /> Code
+                  <GithubIcon /> Mã nguồn
                 </a>
               </div>
             </div>
@@ -267,9 +267,9 @@ function App() {
               <span className="project-icon">🤖</span>
             </div>
             <div className="project-content">
-              <h3 className="project-title">AI Chatbot Assistant</h3>
+              <h3 className="project-title">Trợ lý Chatbot AI</h3>
               <p className="project-desc">
-                An interactive AI assistant web app powered by OpenAI APIs, featuring markdown code rendering, conversation memory, and fast streaming.
+                Ứng dụng web trợ lý AI tương tác sử dụng API của OpenAI, hỗ trợ hiển thị định dạng markdown, lưu trữ lịch sử trò chuyện và phản hồi thời gian thực siêu tốc.
               </p>
               <div className="project-tags">
                 <span className="project-tag">Vite</span>
@@ -278,7 +278,7 @@ function App() {
               </div>
               <div className="project-links">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <GithubIcon /> Code
+                  <GithubIcon /> Mã nguồn
                 </a>
               </div>
             </div>
@@ -290,9 +290,9 @@ function App() {
               <span className="project-icon">⚡</span>
             </div>
             <div className="project-content">
-              <h3 className="project-title">Cloudflare Edge Dev Blog</h3>
+              <h3 className="project-title">Blog Công nghệ Cloudflare Edge</h3>
               <p className="project-desc">
-                A serverless static blog deployed globally on Cloudflare Pages, powered by KV stores for analytics and dynamic view counters.
+                Trang blog tĩnh serverless triển khai toàn cầu trên Cloudflare Pages, sử dụng KV store để phân tích dữ liệu và đếm lượt xem thời gian thực.
               </p>
               <div className="project-tags">
                 <span className="project-tag">React</span>
@@ -301,7 +301,7 @@ function App() {
               </div>
               <div className="project-links">
                 <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="project-link">
-                  <GithubIcon /> Code
+                  <GithubIcon /> Mã nguồn
                 </a>
               </div>
             </div>
@@ -313,14 +313,14 @@ function App() {
       <section id="contact" className="section container">
         <div className="glass-card">
           <div className="section-header">
-            <span className="section-subtitle">Get in Touch</span>
-            <h2 className="section-title">Let's Connect</h2>
+            <span className="section-subtitle">Kết nối</span>
+            <h2 className="section-title">Liên hệ với tôi</h2>
           </div>
 
           <div className="contact-grid">
             <div className="contact-info-card">
-              <h3>Contact Information</h3>
-              <p>Feel free to reach out to discuss new projects, design ideas, or just to say hi!</p>
+              <h3>Thông tin liên hệ</h3>
+              <p>Hãy thoải mái liên hệ với tôi để thảo luận về các dự án mới, ý tưởng thiết kế, hoặc chỉ đơn giản là gửi lời chào!</p>
 
               <div className="contact-method">
                 <div className="contact-icon-box">
@@ -333,7 +333,7 @@ function App() {
               </div>
 
               <div>
-                <h4>Follow Me</h4>
+                <h4>Theo dõi tôi</h4>
                 <div className="social-links">
                   <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="GitHub">
                     <GithubIcon />
@@ -347,7 +347,7 @@ function App() {
 
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-group">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Họ và tên</label>
                 <input
                   type="text"
                   id="name"
@@ -356,12 +356,12 @@ function App() {
                   onChange={handleInputChange}
                   className="form-input"
                   required
-                  placeholder="Your name"
+                  placeholder="Tên của bạn"
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Địa chỉ Email</label>
                 <input
                   type="email"
                   id="email"
@@ -370,12 +370,12 @@ function App() {
                   onChange={handleInputChange}
                   className="form-input"
                   required
-                  placeholder="your.email@example.com"
+                  placeholder="email.cua.ban@example.com"
                 />
               </div>
 
               <div className="form-group">
-                <label htmlFor="message">Message</label>
+                <label htmlFor="message">Lời nhắn</label>
                 <textarea
                   id="message"
                   name="message"
@@ -383,17 +383,17 @@ function App() {
                   onChange={handleInputChange}
                   className="form-textarea"
                   required
-                  placeholder="Your message details..."
+                  placeholder="Chi tiết lời nhắn của bạn..."
                 ></textarea>
               </div>
 
               <button type="submit" className="btn btn-primary" style={{ width: 'max-content' }}>
-                Send Message
+                Gửi lời nhắn
               </button>
 
               {formSubmitted && (
                 <div style={{ color: '#10b981', fontWeight: 600, marginTop: '1rem' }}>
-                  ✓ Thank you! Your message has been sent successfully.
+                  ✓ Cảm ơn bạn! Lời nhắn của bạn đã được gửi thành công.
                 </div>
               )}
             </form>
@@ -403,9 +403,9 @@ function App() {
 
       {/* Footer */}
       <footer className="footer container">
-        <p>© {new Date().getFullYear()} Trần Đình Nhứt. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Trần Đình Nhứt. Bảo lưu mọi quyền.</p>
         <p style={{ fontSize: '0.8rem', marginTop: '0.5rem', opacity: 0.7 }}>
-          Built with React & Vite. Hosted on Cloudflare Pages.
+          Được xây dựng bằng React & Vite. Lưu trữ trên Cloudflare Pages.
         </p>
       </footer>
     </>
